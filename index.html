@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
-<body>
+<body class="">
     
     <div class="main-wrapper">
         <header class="header">
@@ -25,8 +25,8 @@
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Service</a></li>
                     <li><a href="#" class="orange">Hire Me</a></li>
-                    <li><a href="#"><i class="fa fa-expand fa-fw"></i> </a></li>
-                    <li><a href="#"><i class="fa fa-moon fa-fw"></i> </a></li>
+                    <li><a href="#" onclick="scanContact(event)" ><i class="fa fa-expand fa-fw"></i> </a></li>
+                    <li><a href="#" id="mood" onclick="changeMood(event)"><i class="fa fa-moon fa-fw"></i> </a></li>
                 </ul>
             </nav>
         </header>

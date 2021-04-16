@@ -14,6 +14,16 @@ body {
   background-color: var(--sec-c);
   transition: background-color 1s ease; }
 
+.dark {
+  --prim-c: #EBEBEB;
+  --sec-c: #1E1D1E;
+  --btn-c: #E67E22; }
+  .dark .card img {
+    background: var(--prim-c); }
+  .dark .close-qr {
+    color: var(--thi-c);
+    opacity: 1 !important; }
+
 .orange {
   color: var(--thi-c) !important;
   font-weight: 400 !important; }
@@ -136,5 +146,34 @@ ul {
           .main-wrapper .main-content .skill ul li.active i {
             color: var(--thi-c);
             opacity: 1; }
+
+#cardWrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: var(--sec-c);
+  z-index: 9999;
+  top: 0;
+  left: 0; }
+  #cardWrapper .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #cardWrapper .card img {
+      height: 200px;
+      border: 5px solid var(--prim-c);
+      border-radius: 10px;
+      padding: 15px; }
+    #cardWrapper .card p {
+      color: var(--prim-c); }
+  #cardWrapper .close-qr {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 20px;
+    right: 20px;
+    opacity: .50;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
