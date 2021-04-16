@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+*, html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+:root {
+  --prim-c: #1E1D1E;
+  --sec-c: #EBEBEB;
+  --thi-c: #E67E22;
+  --btn-c: #1E1D1E; }
+
+body {
+  background-color: var(--sec-c);
+  transition: background-color 1s ease; }
+
+.orange {
+  color: var(--thi-c) !important;
+  font-weight: 400 !important; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+.main-wrapper {
+  padding: 20px 50px 0px 50px; }
+  .main-wrapper header.header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--prim-c); }
+    .main-wrapper header.header .brand a {
+      color: var(--prim-c);
+      font-family: "Rockwell", serif;
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -4px;
+      line-height: 16px;
+      text-decoration: none; }
+      .main-wrapper header.header .brand a span {
+        font-weight: 300;
+        font-family: inherit; }
+    .main-wrapper header.header nav ul li {
+      display: inline-block; }
+      .main-wrapper header.header nav ul li a {
+        transition: color 1s ease;
+        color: var(--prim-c);
+        padding: 0 10px;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none; }
+      .main-wrapper header.header nav ul li a:hover {
+        color: var(--thi-c);
+        font-weight: 400; }
+  .main-wrapper .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .main-wrapper .main-content .info {
+      flex: 4;
+      margin-top: 250px; }
+      .main-wrapper .main-content .info h1 {
+        font-weight: 400;
+        font-size: 2.5em;
+        color: var(--prim-c); }
+      .main-wrapper .main-content .info p {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 22px;
+        margin: 10px 0 20px;
+        color: var(--prim-c); }
+      .main-wrapper .main-content .info .btn {
+        color: var(--sec-c);
+        background-color: var(--btn-c);
+        border-color: var(--btn-c);
+        padding: 8px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 300;
+        margin-top: 20px;
+        transition: margin .5s ease; }
+      .main-wrapper .main-content .info .btn:hover {
+        margin-top: 10px; }
+      .main-wrapper .main-content .info ul.social {
+        position: absolute;
+        bottom: 50px; }
+        .main-wrapper .main-content .info ul.social li {
+          display: inline-block;
+          padding-right: 10px; }
+          .main-wrapper .main-content .info ul.social li a {
+            color: var(--prim-c); }
+            .main-wrapper .main-content .info ul.social li a i {
+              font-size: 1.2em; }
+    .main-wrapper .main-content .photo-wrapper {
+      flex: 4; }
+      .main-wrapper .main-content .photo-wrapper .pt img {
+        position: absolute;
+        bottom: 0;
+        width: auto; }
+      .main-wrapper .main-content .photo-wrapper .pt .bg {
+        height: 450px;
+        transition: bottom 1s; }
+      .main-wrapper .main-content .photo-wrapper .pt .photo {
+        height: 500px;
+        transition: right 1s;
+        right: 25%; }
+      .main-wrapper .main-content .photo-wrapper .pt:hover {
+        transition: ease-in-out slow; }
+        .main-wrapper .main-content .photo-wrapper .pt:hover .bg {
+          bottom: 20px;
+          transition: bottom 1s; }
+        .main-wrapper .main-content .photo-wrapper .pt:hover .photo {
+          right: 28%;
+          transition: right 1s; }
+    .main-wrapper .main-content .skill {
+      flex: 1; }
+      .main-wrapper .main-content .skill ul {
+        position: absolute;
+        bottom: 50px; }
+        .main-wrapper .main-content .skill ul li {
+          display: block;
+          text-align: center; }
+          .main-wrapper .main-content .skill ul li i {
+            transition: color 1s ease;
+            color: var(--prim-c);
+            font-size: 1.5em;
+            line-height: 1.6em;
+            opacity: .8; }
+        .main-wrapper .main-content .skill ul li:hover i {
+          color: var(--thi-c); }
+        .main-wrapper .main-content .skill ul li.active {
+          font-size: 1.8em; }
+          .main-wrapper .main-content .skill ul li.active i {
+            color: var(--thi-c);
+            opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */
