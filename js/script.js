@@ -23,7 +23,7 @@ function scanContact(event){
     const card =   `
         <span class="close-qr" onclick="closeQR(event)"><i class="fas fa-times"> </i></span>
         <div class="card">
-            <img src="/img/card.png" alt="" class="card-img">
+            <img src="img/card.png" alt="" class="card-img">
             <p>Scan Me</p>
         </div>
     `;
